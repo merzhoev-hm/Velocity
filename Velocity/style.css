@@ -1,0 +1,524 @@
+/*--------- Шрифты ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*--------- Общие стили ---------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.container{
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+p{
+    line-height: 1.8;
+    color: #6a859C;
+}
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 17px;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #676770;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8e8e9c;
+}
+.common-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.common-section--dark {
+   background-color: #192024; 
+}
+
+.common-section--dark * {
+   color: #fff;
+}
+
+.common-section--dark .subtitle{
+   color: #e8e8e8;
+}
+
+/*--------- Общие стили ---------*/
+
+
+/*--------- header ---------*/
+.header{
+    padding: 20px 0px;
+    position: fixed;
+
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #6989FF;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header_nav a {
+    color: #676770;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.header_nav a:hover{
+    color: #0082F3;
+}
+
+.header_nav a:active{
+    color: #0065BD;
+}
+/*--------- header ---------*/
+
+
+/*--------- main ---------*/
+/*--------- section welcome ---------*/
+.main {
+}
+
+.welcome {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 600px;
+    height: 100vh;
+
+    background-color: #2e2e2e;
+    background-image: url(images/WelcomeBG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__title {
+    font-size: 59px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.welcome__links > * + * {
+    margin-left: 20px;
+}
+
+.welcome .container{}
+
+.link__primary {
+    display: inline-block;
+    padding: 11px 32px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+
+    background-color: #69b9ff;
+    transition: all 0.2s;
+}
+
+.link__primary:hover{
+    background-color: #8AC9FF;
+}
+
+.link__primary:active{
+    background-color: #006BC8;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
+
+}
+/*--------- section welcome ---------*/
+
+/*--------- section about ---------*/
+.about {
+}
+
+.about .cards-wrapper{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.about .card {
+    padding: 35px 15px 20px;
+    max-width: 300px;
+    border: 1px solid #dcebf7;
+    border-radius: 5px;
+}
+
+.about .card img{
+    margin-bottom: 20px;
+    width: 94px;
+    height: 94px;
+
+    object-fit: contain;
+}
+
+.about .card h4{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+    letter-spacing: 7px;
+    text-transform: uppercase;
+
+    color: #676770;
+}
+/*--------- section about ---------*/
+
+/*--------- section services ---------*/
+.services .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .card {
+    width: 45%;
+    border-radius: 5px;
+}
+
+.services .card img {
+    margin-bottom: 20px;
+}
+
+.services .card h4 {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.services .link {
+    margin-top: 15px;   
+}
+
+/*--------- section services ---------*/
+
+
+/*--------- section tabs ---------*/
+.tab-section {
+
+}
+
+.tabs {
+
+}
+
+.tabs__nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tabs__nav button {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+
+    background-color: #92A0AD;
+    border-radius: 4px;
+    padding: 1px 30px;
+}
+
+.tabs__nav button.active{
+    background-color: #2e80b6;
+}
+
+
+.active {
+    
+}
+
+.tabs__item{
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.tabs__item img{
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.tabs__item h4{
+    margin-bottom: 15px;
+
+    font-size: 31px;
+    line-height: 36px;
+    color: #676770;
+}
+
+.tabs__desc {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*--------- section tabs ---------*/
+/*--------- main ---------*/
+
+/*--------- footer ---------*/
+.footer__desc {
+    display: flex;
+}
+
+.footer__desc h4{
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 25px;
+}
+
+.footer__desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 ;
+    flex-wrap: wrap;
+    gap: 20px ;
+}
+
+.footer__desc > * {
+    width: 30%;
+    min-width: 220px;
+}
+
+.footer__desc  a {
+    font-size: 13px;
+    color: #668cad;
+}
+
+.footer__desc  li {
+    border-bottom: #D5D5E0 1px solid;
+    height: 31px;
+    width: 100%;
+}
+
+.footer_links ul {
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+}
+
+.footer_social ul div{
+    display: flex;
+    gap: 10px ;
+}
+
+.footer_social ul{
+    display: flex;
+    flex-flow: column;
+    gap: 6px ;
+}
+
+.footer_social img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    
+}
+
+.footer__copy {
+    background-color: #383838;
+}
+
+.footer__copy p {
+    color: #9E9E9E;
+    padding: 40px 0;
+    text-align: center;
+}
+/*--------- footer ---------*/
+
+/*--------- медиа запросы ---------*/
+
+@media(max-width: 730px){
+    .footer__desc{
+        justify-content: space-evenly;
+    }
+
+    .footer__desc h4{
+        margin-bottom: 10px;
+    }
+
+    .footer__desc{
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .services .cards-wrapper{
+        flex-flow: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .services .card{
+        width: 80%;
+    }
+
+    .title-wrapper{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width: 525px){
+    .tabs__nav{
+        flex-flow: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .tabs__nav button{
+        padding:10px 20px ;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 400px){
+    body{
+        font-size: 12px;
+    }
+
+    .header_nav ul {
+        gap: 15px;
+    }
+
+    .welcome__title {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .welcome__links a {
+       display: block;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .welcome__links > * + * {
+        margin-top: 20px;
+    }
+
+    .about .card h4{
+        font-size: 16px;
+    }
+
+    .services .card h4{
+        font-size: 16px;
+    }
+
+    .services .card .link{
+        font-size: 14pxs;
+    }
+
+    .tabs__item h4{
+        font-size: 24px;
+    }
+}
+/*--------- медиа запросы ---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
